@@ -18,7 +18,7 @@
     }
 
     public function registrarAuditoria(string $acao): void {
-      //
+      throw new Exception('Not implemented');
     }
 
     public function getTipo(): string {
