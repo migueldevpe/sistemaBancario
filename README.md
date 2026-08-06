@@ -1,4 +1,4 @@
-# sistemaBancario
+# Sistema Bancário
 
 Pequeno projeto realizado para adquirir conhecimento básico em PHP e Programação Orientada a Objetos (POO)
 
