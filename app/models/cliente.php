@@ -1,8 +1,10 @@
 <?php 
+  require_once('./app/models/contas/Conta.php');
   class Cliente {
     protected string $nome;
     protected string $documento;
     protected string $email;
+    protected ?Conta $conta = null; 
 
     public function __construct(
       string $nome, 
@@ -36,6 +38,14 @@
 
     public function getEmail(): string {
       return $this->email;
+    }
+
+    public function setConta(Conta $conta): void {
+      $this->conta = $conta;
+    }
+
+    public function getConta(): ?Conta {
+      return $this->conta;
     }
   }
 ?>
