@@ -280,13 +280,13 @@
 
         break;
       }
-    }
 
-    if (!$contaEncontrado) {
-      $_SESSION['toast'] = [
-        'tipo' => 'error',
-        'mensagem' => 'Conta não encontrada.'
-      ];
+      if (!$contaEncontrado) {
+        $_SESSION['toast'] = [
+          'tipo' => 'error',
+          'mensagem' => 'Conta não encontrada.'
+        ];
+      }
     }
 
     header("Location: " . htmlspecialchars($_SERVER['PHP_SELF']));
