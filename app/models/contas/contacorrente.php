@@ -1,5 +1,5 @@
 <?php
-  require_once('conta.php');
+  require_once('Conta.php');
 
   class ContaCorrente extends Conta {
     private float $limite;
@@ -9,7 +9,7 @@
       Cliente $cliente, 
       float $limite = 500.0
     ) {
-      return parent::__construct($numero, $cliente);
+      parent::__construct($numero, $cliente);
       $this->limite = $limite;
     }
 
@@ -26,6 +26,10 @@
 
     public function registrarAuditoria(string $acao): void {
       throw new Exception('Not implemented');
+    }
+
+    public function getTipo(): string {
+      return 'Conta Corrente';
     }
   }
 
