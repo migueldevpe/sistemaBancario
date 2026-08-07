@@ -4,4 +4,4 @@ Pequeno projeto realizado para adquirir conhecimento básico em PHP e Programaç
 
 <img src="./app/resource/imgProjeto.webp">
 
-> Última modificação realizada em 06/08/2026.
+> Última modificação realizada em 07/08/2026.
